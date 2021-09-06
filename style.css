@@ -1,0 +1,218 @@
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-family: "BPG Banner QuadroSquare Caps", sans-serif;
+    margin: 0;
+    background-color: #2f2f4b;
+    color: #05e7f1;
+    font-size: 2rem;
+}
+
+header {
+    width: 100%;
+    background-color: #222337;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-div {
+    width: 118rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-content {
+    display: flex;
+    width: 150rem;
+    margin: auto;
+}
+
+.child {
+    flex: 1;
+}
+
+h1 {
+    margin: 5rem;
+    font-size: 5rem;
+}
+
+#left {
+    margin-right: 1.5rem;
+    text-align: center;
+}
+
+#right {
+    text-align: center;
+    margin-left: 1.5rem;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+}
+
+#box {
+    background: #222337;
+    width: 40rem;
+    height: 10rem;
+    font-size: 8rem;
+    padding-top: 6rem;
+    text-align: center;
+    margin: 6rem auto;
+    line-height: 6rem;
+    font-weight: bold;
+    border:0.3rem solid #05e7f1 
+}
+
+input {
+    width: 35rem;
+    height: 6rem;
+    font-size: 5rem;
+    text-align: center;
+    background: transparent;
+    border: 0.3rem solid #05e7f1;
+    color: #05e7f1;
+    margin-bottom: 6rem;
+}
+
+.button {
+    width: 30rem;
+    height: 8rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    font-family: "BPG Banner QuadroSquare Caps", sans-serif;
+    color: #05e7f1;
+    background: transparent;
+    border: 0.3rem solid #05e7f1;
+    cursor: pointer;
+    line-height: 8rem;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.right-text {
+    font-size: 3.5rem;
+}
+
+.status {
+    margin-top: 6rem;
+}
+
+#score {
+    margin-top: 30rem;
+}
+
+@media only screen and (max-width: 1550px) {
+    :root {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    :root {
+        font-size: 6.5px;
+    }
+
+    h1 {
+        padding-top: 5%;
+    }
+
+    #main-content {
+        padding-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    :root {
+        font-size: 5px;
+    }
+
+    #logo {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    :root {
+        font-size: 5px;
+    }
+
+    #header-div{
+        width: 100%;
+    }
+
+    #main-content {
+        width: 100%;
+    }
+
+    #logo {
+        width: 45%
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    :root {
+        font-size: 5px;
+    }
+
+    #header-div{
+        width: 100%;
+    }
+
+    #main-content {
+        width: 100%;
+        padding-top: 10%;
+        flex-direction: column;
+    }
+
+    h1 {
+        padding-top: 10%;
+    }
+
+    #logo {
+        width: 35%
+    }
+
+    .score {
+        margin-top: 10rem;
+    }
+
+    #box {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    :root {
+        font-size: 5px;
+    }
+
+    #header-div{
+        width: 100%;
+    }
+
+    #main-content {
+        width: 100%;
+        padding-top: 30%;
+        flex-direction: column;
+    }
+
+    h1 {
+        padding-top: 10%;
+    }
+
+    #logo {
+        width: 35%
+    }
+
+    .score {
+        margin-top: 10rem;
+    }
+}

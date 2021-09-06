@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>გამოიცანი რიცხვი</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/bpg-banner-quadrosquare-caps.min.css">
+        
+    </head>
+    <body>
+        <!-- ჩემი ლოგო და მარჯვენა კუთხეში მითითება range-ზე -->
+        <header>
+            <div id="header-div">
+                <img src="logo.png" id="logo">
+                <h2>(1-დან 20-მდე)</h2>
+            </div id="header-div">
+        </header>
+        <!-- სახელი შუაში -->
+        <section id="name">
+            <h1>გამოიცანი ჩემი რიცხვი</h1>
+        </section>
+        <!-- ეკრანის მარცხენა მხარეს ოთკუთხედი, სადაც რიცხვები ეწერება; რიცხვის შესაყვანი ველი მაგის ქვევით; შეყვანის ღილაკი უფრო ქვევით; თავიდან დაწყების ღილაკი სულ ქვევით -->
+        <section id="main-content">
+            <section class="child" id="left">
+                <div id="box">?</div>
+                <input  type="number" class="input" min="1" max="20" step="1">
+                <button class="button check">შემოწმება</button>
+                <button class="button again">თავიდან</button>
+            </section>
+        <!-- ზევით — სტატუსის ველი, შუაში — ამჟამინდელი ქულის ველი, ქვევით — უმაღლესი ქულის ველი -->
+            <section class="child" id="right">
+                <p class="right-text status" id="status">⏳ დაიწყე გამოცნობა...</p>
+                <p class="right-text" id="score">💯 ქულა: <span class="score">20</span> &#160 &#160 &#160 &#160 &#160</p>
+                <p class="right-text">🏆 უმაღლესი ქულა: <span class="highscore">0</span></p>
+            </section>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
